@@ -48,8 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         itemCount: postModel.length,
                         itemBuilder: (context, index){
                         return ListTile(
-                          subtitle: Text(postModel[index].body.toString()),
                           title: Text(postModel[index].title.toString()),
+                          subtitle: Text(postModel[index].body.toString()),
                         );
                     });
                 }

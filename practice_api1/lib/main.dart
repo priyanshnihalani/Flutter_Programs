@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:practice_api1/wheatherapi.dart';
 
-import 'ApiScreen.dart';
+import 'ApiScreen3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ApiScreen(),
+      home: const WheatherApi(),
     );
   }
 }
