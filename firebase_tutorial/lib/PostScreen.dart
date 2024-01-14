@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import 'GoogleAuth.dart';
 import 'login.dart';
 
 class PostScreen extends StatefulWidget {
@@ -22,7 +23,7 @@ class _PostScreenState extends State<PostScreen> {
         actions: [
           IconButton(onPressed: (){
             auth.signOut().then((value){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => GoogleAuth()));
               Fluttertoast.showToast(msg: "Logout Successful");
             });
           }, icon: Icon(Icons.logout_outlined))

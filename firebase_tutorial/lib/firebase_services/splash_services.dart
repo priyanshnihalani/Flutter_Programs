@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_tutorial/GoogleAuth.dart';
 import 'package:firebase_tutorial/PostScreen.dart';
 import 'package:firebase_tutorial/login.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class SplashServices{
         Timer(const Duration(seconds: 3), ()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> PostScreen())));
       }
     else{
-      Timer(const Duration(seconds: 3), ()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> Login())));
+      Timer(const Duration(seconds: 3), ()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> GoogleAuth())));
 
     }
   }
